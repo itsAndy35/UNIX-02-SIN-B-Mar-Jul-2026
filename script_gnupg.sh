@@ -10,3 +10,6 @@ gpg --verify bm_doc_no_cifrado_firmado.txt #We verified the signature
 gpg --edit-key B71FA457F258D #editar la llave de mi compa;ero
 gpg --verify bm_doc_no_cifrado_firmado.txt #verificamos el nuevo nivel de confianza al documento
 gpg --output doc_no_firmado_binario.txt --sign doc_no_cifrado.txt #firma de documento en binario
+gpg --verify bm_doc_no_cifrado_firmado_binario.txt #verificamos la firma en binario
+gpg --output firma_separada_doc_no_cifrado.sig --detach-sign doc_no_cifrado.txt #separamos la firma del documento
+gpg --verify bm_firma_separada_doc_no_cifrado.sig bm_doc_no_cifrado.txt #separamos la firma separada del documento de neustro compa;ero
