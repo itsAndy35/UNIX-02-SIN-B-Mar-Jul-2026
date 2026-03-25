@@ -14,3 +14,4 @@ gpg --verify bm_doc_no_cifrado_firmado_binario.txt #verificamos la firma en bina
 gpg --output firma_separada_doc_no_cifrado.sig --detach-sign doc_no_cifrado.txt #separamos la firma del documento
 gpg --verify bm_firma_separada_doc_no_cifrado.sig bm_doc_no_cifrado.txt #separamos la firma separada del documento de neustro compa;ero
 gpg --output doc_cifrado_y_firmado.txt --encrypt --sign --recipient A021DAD50ABBF516 doc_no_cifrado.txt #firmar y cifrar un documento
+gpg --output doc_cifrado_y_firmado_descifrado_y_validado.txt --decrypt bm_doc_cifrado_y_firmado.txt #validar firma y descifrar
