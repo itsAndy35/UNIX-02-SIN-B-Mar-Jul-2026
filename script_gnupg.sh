@@ -7,3 +7,4 @@ gpg --output doc_cifrado.txt --encrypt --recipient XXXXXXX doc_no_cifrado.txt #W
 gpg --decrypt bm_doc_cifrado.txt #decipher my partner's document
 gpg --output doc_no_cifrado_firmado.txt --clearsign doc_no_cifrado.txt #documento firmado
 gpg --verify bm_doc_no_cifrado_firmado.txt #We verified the signature
+gpg --edit-key B71FA457F258D #editar la llave de mi compa;ero
