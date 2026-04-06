@@ -8,3 +8,4 @@ ls -lai #in-depth technical inspection of a folder.
 total 12 # Total disk space in blocks used by this directory
 925542 drwxr-xr-x 2 codespace codespace 4096 Apr  6 12:36 .
 918515 drwxr-x--- 1 codespace codespace 4096 Apr  6 12:36 ..
+stat . #command line that displays detailed information and metadata about files or file systems
