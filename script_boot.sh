@@ -12,3 +12,5 @@ stat . #command line that displays detailed information and metadata about files
 mkdir -p /tmp/prueba/sub1/tmp/pruebas/sub2 #It establishes the hours for access, change, modification, and creation of the new directory.
 stat /tmp/prueba #Displays detailed metadata of files or file systems in the "/tmp/prueba" directory
 man mkdir #standard tool for viewing embedded user manuals for commands, configuration files, system calls, and functions
+pwd #It shows the absolute path of the directory you are currently in.
+who am I? #display the current effective username in the terminal
