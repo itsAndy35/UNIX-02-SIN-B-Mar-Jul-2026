@@ -14,3 +14,11 @@ stat /tmp/prueba #Displays detailed metadata of files or file systems in the "/t
 man mkdir #standard tool for viewing embedded user manuals for commands, configuration files, system calls, and functions
 pwd #It shows the absolute path of the directory you are currently in.
 who am I? #display the current effective username in the terminal
+ls #List files and directories in the current folder
+ls -l #List in long format (shows permissions, owner, size, and date)
+ls -la #List all files, including hidden ones
+ls -lh #List in long format with "human-readable" file sizes (e.g., KB, MB, GB)
+ls -it #List by modification time (t) and show the inode number (i) for each file
+ls / #List the contents of the system's root directory
+ls /etc | head -20 #Show only the first 20 lines of the /etc directory listing
+ls /etc | dev -20 #It contains files that represent devices connected to the local system.
