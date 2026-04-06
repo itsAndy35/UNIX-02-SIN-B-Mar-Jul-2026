@@ -9,3 +9,6 @@ total 12 # Total disk space in blocks used by this directory
 925542 drwxr-xr-x 2 codespace codespace 4096 Apr  6 12:36 .
 918515 drwxr-x--- 1 codespace codespace 4096 Apr  6 12:36 ..
 stat . #command line that displays detailed information and metadata about files or file systems
+mkdir -p /tmp/prueba/sub1/tmp/pruebas/sub2 #It establishes the hours for access, change, modification, and creation of the new directory.
+stat /tmp/prueba #Displays detailed metadata of files or file systems in the "/tmp/prueba" directory
+man mkdir #standard tool for viewing embedded user manuals for commands, configuration files, system calls, and functions
