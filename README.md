@@ -24,3 +24,5 @@ make menuconfig # Opens a terminal-based configuration menu to customize kernel 
 make -j 2 #compile or build software projects faster by using parallel processing.
 sudo mkdir /boot-files #Create a new folder called boot-files at the top level of your Linux system's hard drive.
 sudo cp arch/x86/boot/bzImage /boot files #This command makes a copy of your newly compiled kernel to the folder we created.
+git clone --depth 1 https://git.busybox.net/busybox #
+cd busybox #change directory to busybox
