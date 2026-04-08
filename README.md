@@ -18,7 +18,7 @@ syslinux           Lightweight bootloader used to boot operating systems from di
 dosfstools         Utilities for creating and checking FAT file systems.
 qemu-system-x86    Emulator/virtualizer used to run x86 operating systems in virtual machines.
 
-git clone •-depth 1 https://github.com/torvalds/linux.git #Downloads a lightweight copy of the latest Linux kernel source code from GitHub without the full commit history
+git clone --depth 1 https://github.com/torvalds/linux.git #Downloads a lightweight copy of the latest Linux kernel source code from GitHub without the full commit history
 cd linux # Change to linux directory
 make menuconfig # Opens a terminal-based configuration menu to customize kernel build options before compiling the Linux kernel
-
+make -j 2 #compile or build software projects faster by using parallel processing.
