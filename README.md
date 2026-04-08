@@ -22,3 +22,5 @@ git clone --depth 1 https://github.com/torvalds/linux.git #Downloads a lightweig
 cd linux # Change to linux directory
 make menuconfig # Opens a terminal-based configuration menu to customize kernel build options before compiling the Linux kernel
 make -j 2 #compile or build software projects faster by using parallel processing.
+sudo mkdir /boot-files #Create a new folder called boot-files at the top level of your Linux system's hard drive.
+sudo cp arch/x86/boot/bzImage /boot files #This command makes a copy of your newly compiled kernel to the folder we created.
