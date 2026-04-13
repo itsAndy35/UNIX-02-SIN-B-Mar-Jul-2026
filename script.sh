@@ -13,3 +13,5 @@ rm -rf # Deletes a directory and all its contents recursively and by force
 rm -- --rf # Deletes a file or directory literally named "--rf" (the -- stops option parsing)
 mkdir -- -rf # Creates a directory literally named "-rf" (the -- prevents -rf from being read as flags)
 rmdir -- -rf # Removes the directory literally named "-rf" (must be empty)
+ls --help #quick summary, fits on one screen
+man ls #complete manual
