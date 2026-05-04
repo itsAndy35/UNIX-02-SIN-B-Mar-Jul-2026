@@ -19,3 +19,5 @@ su  - o sudo -i #Log in as superuser (root) loading its full environment
 exit #Closes the current session or exits the terminal
 sl #Displays a steam locomotive animation in the terminal
 sudo sl #Runs the steam locomotive animation with superuser privileges
+cd ~/Documents #Change to the "Documents" directory within the user's home folder
+ls -l hello.sh  #Show details (permissions, owner, size) of the "hello.sh" file
