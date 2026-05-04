@@ -9,3 +9,9 @@ pwd #Print the full path of the current working directory
 cd #change directory
 cd Documents #Change the current directory to the "Documents" folder
 cd / #Change to the system root directory
+cd /home/sysadmin #Change to the "sysadmin" user's directory
+ls -l /var/log #List system log files in long format with details
+ls -lt /var/log #List log files sorted by modification time, newest first
+ls -l -s /var/log #List logs with details and show the size in blocks
+ls -lSr /var/log #List logs by size in ascending order
+ls -r /var/log #List /var/log contents in reverse alphabetical order
