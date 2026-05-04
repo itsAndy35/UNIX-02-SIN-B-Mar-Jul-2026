@@ -21,3 +21,5 @@ sl #Displays a steam locomotive animation in the terminal
 sudo sl #Runs the steam locomotive animation with superuser privileges
 cd ~/Documents #Change to the "Documents" directory within the user's home folder
 ls -l hello.sh  #Show details (permissions, owner, size) of the "hello.sh" file
+./hello.sh #Execute the script named "hello.sh" in the current directory
+chmod u+x hello.sh #Grant execution permission to the owner of the "hello.sh" file
