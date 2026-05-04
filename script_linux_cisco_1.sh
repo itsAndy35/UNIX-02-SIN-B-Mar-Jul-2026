@@ -23,3 +23,4 @@ cd ~/Documents #Change to the "Documents" directory within the user's home folde
 ls -l hello.sh  #Show details (permissions, owner, size) of the "hello.sh" file
 ./hello.sh #Execute the script named "hello.sh" in the current directory
 chmod u+x hello.sh #Grant execution permission to the owner of the "hello.sh" file
+sudo chown root hello.sh  #Change the owner of the "hello.sh" file to the root user
