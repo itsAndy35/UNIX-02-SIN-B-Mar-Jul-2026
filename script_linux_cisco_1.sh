@@ -15,3 +15,7 @@ ls -lt /var/log #List log files sorted by modification time, newest first
 ls -l -s /var/log #List logs with details and show the size in blocks
 ls -lSr /var/log #List logs by size in ascending order
 ls -r /var/log #List /var/log contents in reverse alphabetical order
+su  - o sudo -i #Log in as superuser (root) loading its full environment
+exit #Closes the current session or exits the terminal
+sl #Displays a steam locomotive animation in the terminal
+sudo sl #Runs the steam locomotive animation with superuser privileges
