@@ -24,3 +24,9 @@ ls -l hello.sh  #Show details (permissions, owner, size) of the "hello.sh" file
 ./hello.sh #Execute the script named "hello.sh" in the current directory
 chmod u+x hello.sh #Grant execution permission to the owner of the "hello.sh" file
 sudo chown root hello.sh  #Change the owner of the "hello.sh" file to the root user
+cat animals.txt #Display the full content of the "animals.txt" file
+cat alpha.txt #Display the full content of the "alpha.txt" file
+head alpha.txt #Display the first 10 lines of the "alpha.txt" file
+tail alpha.txt #Display the last 10 lines of the "alpha.txt" file
+head -n 5 alpha.txt   #Show exactly the first 5 lines of "alpha.txt"
+tail -n 5 alpha.txt #Show exactly the last 5 lines of "alpha.txt"
