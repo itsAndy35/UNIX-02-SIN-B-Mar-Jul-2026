@@ -31,3 +31,4 @@ tail alpha.txt #Display the last 10 lines of the "alpha.txt" file
 head -n 5 alpha.txt   #Show exactly the first 5 lines of "alpha.txt"
 tail -n 5 alpha.txt #Show exactly the last 5 lines of "alpha.txt"
 cp /etc/passwd . #Copy the system password file to the current directory
+dd if=/dev/zero of=/tmp/swapex bs=1M count=50 #Create a 50MB file full of zeros in /tmp
