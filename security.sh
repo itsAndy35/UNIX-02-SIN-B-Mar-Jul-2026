@@ -60,4 +60,16 @@ touch ~/lab_chgrp/proyectos/deploy.sh
 #view initial stat--everyone has the user group
 ls -la ~/lab_chgrp/proyectos/
 ls -la ~/lab_chgrp/reportes/
+#change the group of a file
+sudo chgrp desarrolladores ~/lab_chgrp/proyectos/app.py
+ls -la ~/lab_chgrp/proyectos/
+#change group of multiple files
+sudo chgrp diseno \ 
+~/lab_chgrp/proyectos/config.json \ 
+~/lab_chgrp/reportes/informe.txt
+#change recursivly everthing in one directory
+sudo chgrp -R desarrolladores ~/lab_chgrp/scripts/
+ls -laR ~/lab_chgrp/scripts/
 
+#verbose to view the change
+sudo chgrp -Rv diseno ~/lab_chgrp/reportes/
