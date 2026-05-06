@@ -13,12 +13,29 @@ grep "desarrolladores\|operaciones\|servicio_web" /etc/group
 grep -E "desarrolladores|operaciones|servicios_web" /etc/group
 groupadd --help
 grep "GID_MIN\|GID_MAX\|SYS_GID" /etc/login.defs #view the range of GIDs in the system
-GID_MIN                  1000
-GID_MAX                 60000
-#SYS_GID_MIN              101
-#SYS_GID_MAX              999
-SUB_GID_MIN                10000
-addgroup diseno
-addgroup --gid 2100 marketing
-addgroup --system cache_web
+# GID_MIN                  1000
+# GID_MAX                 60000
+# SYS_GID_MIN              101
+# #SYS_GID_MAX              999
+# #SUB_GID_MIN                10000
+
+#create groups with addgroup
+sudo addgroup diseno
+sudo addgroup --gid 2100 marketing
+sudo addgroup --system cache_web
+#verify
 grep "diseno\|marketing\|cache_web" /etc/group
+#view in wich groups is the actual user
+groups
+id
+#add the user to a group whit usermod
+sudo usermod -aG desarrolladores $USER
+sudo usermod -aG diseno $USER
+#using $ gave a problems because it didn't have anything. We can use root or (whoami)
+sudo usermod -aG desarrolladores root
+sudo usermod -aG diseno root
+sudo usermod -aG desarrolladores
+#verify
+grep -E "desarrolladores|operaciones|servicios_web" /etc/group
+#add user to group with adduser
+
