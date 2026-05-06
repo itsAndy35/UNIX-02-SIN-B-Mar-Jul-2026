@@ -38,4 +38,16 @@ sudo usermod -aG desarrolladores
 #verify
 grep -E "desarrolladores|operaciones|servicios_web" /etc/group
 #add user to group with adduser
-
+sudo adduser root marketing
+#verify
+id root
+#create a temporal group for the demo
+sudo addgroup grupo_temporal
+sudo usermod -aG grupo_temporal root
+id root  
+#now the error: usermod without -a
+sudo usermod -G desarrolladores root #this delete every secundary groups
+id root #lost all the other groups
+#restore
+sudo usermod -aG diseno,marketing,grupo_temporal root
+id root #restored 
