@@ -221,6 +221,7 @@ RUN git config --system --add safe.directory '*' \
 
 
 RUN cat >> /root/.bashrc <<'EOF'
+
 __set_prompt() {
     local ec=$?
     local mark
@@ -232,7 +233,7 @@ __set_prompt() {
     PS1="\[\e[36m\][Andres-Guaminga]\[\e[0m\] \[\e[33m\]\W\[\e[0m\] $mark \$ "
 }
 PROMPT_COMMAND=__set_prompt
-EO
+EOF
 
 CMD ["/usr/bin/bash"]
 
