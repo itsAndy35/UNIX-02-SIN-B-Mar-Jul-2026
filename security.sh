@@ -51,3 +51,13 @@ id root #lost all the other groups
 #restore
 sudo usermod -aG diseno,marketing,grupo_temporal root
 id root #restored 
+#prepare the practice scene
+mkdir -p ~/lab_chgrp/{proyectos,reportes,scripts}
+touch ~/lab_chgrp/proyectos/app.py
+touch ~/lab_chgrp/proyectos/config.json
+touch ~/lab_chgrp/proyectos/informe.txt
+touch ~/lab_chgrp/proyectos/deploy.sh
+#view initial stat--everyone has the user group
+ls -la ~/lab_chgrp/proyectos/
+ls -la ~/lab_chgrp/reportes/
+
