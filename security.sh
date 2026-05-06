@@ -11,3 +11,14 @@ sudo gorupadd -g 2000 operaciones
 sudo groupadd --system servicios_web
 grep "desarrolladores\|operaciones\|servicio_web" /etc/group
 grep -E "desarrolladores|operaciones|servicios_web" /etc/group
+groupadd --help
+grep "GID_MIN\|GID_MAX\|SYS_GID" /etc/login.defs #view the range of GIDs in the system
+GID_MIN                  1000
+GID_MAX                 60000
+#SYS_GID_MIN              101
+#SYS_GID_MAX              999
+SUB_GID_MIN                10000
+addgroup diseno
+addgroup --gid 2100 marketing
+addgroup --system cache_web
+grep "diseno\|marketing\|cache_web" /etc/group
