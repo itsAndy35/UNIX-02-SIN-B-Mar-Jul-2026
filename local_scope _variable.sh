@@ -15,3 +15,8 @@ echo "Variable ${name} will not be printed because it is a local variable."
 #Black Hat Bash by No Starch Press
 #+ echo 'Variable  will not be printed because it is a local variable.'
 #Variable  will not be printed because it is a local variable.
+
+# GLOBAL VARIABLE: Defined outside functions and can be read or modified from anywhere in the entire script.
+# LOCAL VARIABLE: Declared with the 'local' keyword inside a function and disappears completely once that function finishes.
+# FUNCTION INVOCATION: Triggered simply by writing the function's name on a line, without using parentheses like in other languages.
+
