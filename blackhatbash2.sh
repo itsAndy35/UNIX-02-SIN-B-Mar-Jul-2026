@@ -12,4 +12,4 @@ set +x
 #+ ls -l mydirectory
 #total 0
 #-rw-rw-rw- 1 root root 0 jun  1 13:27 myfile
-+ set +x
+#+ set +x
