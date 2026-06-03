@@ -5,5 +5,5 @@ echo ${result}
 result1=$((5*5))
 echo ${result1}
 
-result1=$(5 + 505)
+result2=$(5 + 505)
 echo ${result2}
