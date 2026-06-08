@@ -1,4 +1,5 @@
 #!/bin/bash
+
 ls -l / | grep "bin"
 SCRIPT_NAME="${0}" 
 TARGET="${1}"
