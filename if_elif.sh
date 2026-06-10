@@ -1,6 +1,6 @@
 #!/bin/bash
-USER_INPUT="${1}" #assigns the name of the running script to the user_input variable
-if [[ -z "${USER_INPUT}" ]]; then #checks if the length of the user_input string is one
+USER_INPUT="${0}" #assigns the name of the running script to the user_input variable
+if [[ -z "${USER_INPUT}" ]]; then #checks if the length of the user_input string is zero
     echo "You must provide an argument!" #prints an error message indicating an argument is needed
     exit 1 #terminates the script immediately with an error status code of 1
 fi #closes the first if statement block
