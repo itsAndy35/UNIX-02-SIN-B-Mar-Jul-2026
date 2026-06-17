@@ -1,0 +1,25 @@
+===========================================
+   Evaluando Repositorio Local (Modo Flexible)
+===========================================
+
+[*] Evaluando historial de commits locales en zona horaria UTC-5...
+    -> 65 de 103 commits realizados en horario de clase (07:00-09:00 UTC-5).
+    -> Puntos por horario: 18/30
+
+[*] Evaluando calidad de código de forma flexible...
+    -> Variables detectadas (+10 pts)
+    -> Redirecciones detectadas (+10 pts)
+    -> Argumentos posicionales detectados (+10 pts)
+    -> Condicionales detectados (+10 pts)
+    -> Bucles detectados (+10 pts)
+    -> Funciones detectadas (+10 pts)
+    -> Procesamiento de texto (grep/awk/sed) detectado (+10 pts)
+    -> Puntos por calidad de código: 40/40
+
+[*] Evaluando densidad de comentarios (Sin restricción de idioma)...
+    -> Densidad de comentarios aceptable (13%). (+30 pts)
+    -> Puntos por comentarios: 30/30
+
+===========================================
+   CALIFICACIÓN FINAL: 88 / 100
+===========================================

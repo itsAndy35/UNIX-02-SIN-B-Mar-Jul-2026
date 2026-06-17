@@ -45,5 +45,10 @@ fg %1
 # [1]+  Detenido                  sleep 100 # job 1 has been suspended (stopped), usually by pressing ctrl+z, pausing the process until it is resumed or killed.
 
 bg %1
-#[1]+ sleep 100 &
-#[1]-  Hecho                      sleep 100
+# [1]+ sleep 100 &                           # job 1 has been resumed and is now running in the background (typically the output of the 'bg' command).
+# [1]-  Hecho                      sleep 100 # job 1 has successfully finished (done); the minus sign indicates it was the second most recently managed background job.
+
+chmod +x excercise2.sh
+nohup ./excercise2.sh &
+# [1] 30433 # background job 1 has started and was assigned the process id (pid) 30433.
+# nohup: se descarta la entrada y se añade la salida a 'nohup.out' # nohup informs you that standard input is ignored and all output is being appended to a file named 'nohup.out' so it can keep running even if you close the terminal.
