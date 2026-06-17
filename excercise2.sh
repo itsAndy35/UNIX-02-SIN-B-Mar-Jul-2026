@@ -129,3 +129,4 @@ SCORE=$((SCORE + COMMENT_SCORE))
 echo -e "\n==========================================="
 echo -e "   CALIFICACIÓN FINAL: $SCORE / 100"
 echo -e "==========================================="
+sleep 800
