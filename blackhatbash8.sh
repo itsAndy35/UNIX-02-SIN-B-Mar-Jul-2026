@@ -1,0 +1,13 @@
+#!/usr/bin/bash
+
+awk '{print $1}' log.txt
+
+awk '{print $1}' log.txt
+awk '{print $2}' log.txt
+awk '{print $3}' log.txt
+
+awk '{print $1,$NF}' log.txt
+awk '{print $NF}' log.txt
+
+awk -F',' '{print $1}' example_csv.txt
+awk -F',' '{print $1, $2}' example_csv.txt
