@@ -11,3 +11,6 @@ awk '{print $NF}' log.txt
 
 awk -F',' '{print $1}' example_csv.txt
 awk -F',' '{print $1, $2}' example_csv.txt
+
+awk 'NR < 10' log.txt
+
