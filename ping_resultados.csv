@@ -1,0 +1,4 @@
+
+mysite,nostarch.com,Failure,2026-06-17 14:00:05
+localhost,127.0.0.1,Success,2026-06-17 14:00:15
+servidor_falso,dominio-que-no-existe.local,Failure,2026-06-17 14:00:15
