@@ -21,5 +21,11 @@ sed 's/Mozilla/Godzilla/g' log.txt > newlog.txt
 grep -c "Mozilla" log.txt
 grep -c "Godzilla" newlog.txt
 
+catnewlog.txt | grep "Godzilla" 
 sed 's/ //g' log.txt > newlog1.txt
-sed '1d' newlog1.txt
+sed '1d' newlog1.txt > newlogd.txt
+sed '$d' newlog1.txt
+sed '5,7d' newlog1.txt
+sed -n '2,15 p' log.txt
+sed -i '1d' log.txt
+
