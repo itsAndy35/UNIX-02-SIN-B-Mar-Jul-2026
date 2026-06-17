@@ -28,4 +28,22 @@ sed '$d' newlog1.txt
 sed '5,7d' newlog1.txt
 sed -n '2,15 p' log.txt
 sed -i '1d' log.txt
+sleep 100 & 
+ps -ef | grep sleep
+#RESULT
+# root          1       0  0 12:11 ?        00:00:00 /bin/sh -c echo container started trap "exit 0" 15  exec "$@" while sleep 1 & wait $!; do :; done - # main container entrypoint process (pid 1) running a continuous shell loop to keep the container alive.
+# root      24559     485  0 13:10 pts/1    00:00:00 sleep 100 # the 100-second background process you started earlier from your terminal session (parent pid 485).
+# root      24635       1  0 13:11 ?        00:00:00 sleep 1 # a temporary sleep command spawned directly by the main container loop (parent pid 1).
+# root      24645   24641  0 13:11 ?        00:00:00 sleep 1 # another temporary sleep command, but spawned by a different parent process (pid 24641).
+# root      24651     485  0 13:11 pts/1    00:00:00 grep --color=auto slee # the grep command you just executed in your terminal to search for these exact processes.
 
+jobs
+# [1]+  Hecho                      sleep 10 # background job 1 has successfully finished (done) executing the 10-second sleep command.
+
+fg %1
+# sleep 100 # the command to pause the terminal for 100 seconds, running in the foreground.
+# [1]+  Detenido                  sleep 100 # job 1 has been suspended (stopped), usually by pressing ctrl+z, pausing the process until it is resumed or killed.
+
+bg %1
+#[1]+ sleep 100 &
+#[1]-  Hecho                      sleep 100
